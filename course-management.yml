@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: Learning Platform_Backend Microservice
+    name: course-management
 
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
