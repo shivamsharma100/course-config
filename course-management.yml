@@ -1,23 +1,51 @@
+server:
+  port: 8085
 
-server.port=8085
-spring.application.name=Learning Platform_Backend Microservice
-spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
-spring.datasource.driverClassName=org.postgresql.Driver
-spring.datasource.username=shivam.aj.sharma
-spring.datasource.password=abc@123
-spring.jpa.show-sql=true
-spring.jpa.hibernate.ddl-auto=update
-spring.liquibase.enabled=true
-spring.liquibase.change-log=classpath:db/changelog/db.changelog-master.xml
-secret.jwt=MySecretKey12345
+spring:
+  application:
+    name: Learning Platform_Backend Microservice
 
-# Groq API key for the course booking AI agent (free tier at console.groq.com)
-openai.api.key=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
-info.app.name=Learning platform backend services
-info.app.version=v1
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    driver-class-name: org.postgresql.Driver
+    username: shivam.aj.sharma
+    password: abc@123
 
-management.endpoints.web.exposure.include=*
-management.info.env.enabled=true
-management.endpoint.health.show-details=always
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
 
-anthropic.api.key=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
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/db.changelog-master.xml
+
+secret:
+  jwt: MySecretKey12345
+
+openai:
+  api:
+    key: gsk_5rHEOfYx81XlFtHCWGdyb3FYOk4MrxlGelPsyNDD0invnPDy
+
+info:
+  app:
+    name: Learning platform backend services
+    version: v1
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  info:
+    env:
+      enabled: true
+
+  endpoint:
+    health:
+      show-details: always
+
+anthropic:
+  api:
+    key: sk-ant-xxx
